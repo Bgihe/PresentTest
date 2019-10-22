@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="PresentTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U11-K3-IRH">
+                                <rect key="frame" x="0.0" y="44" width="414" height="72"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                <state key="normal" title="Button to Xib">
+                                    <color key="titleColor" red="0.21970194749999999" green="0.21970194749999999" blue="0.21970194749999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="clickBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="l29-n6-D3d"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ecg-Cy-g5U">
+                                <rect key="frame" x="0.0" y="116" width="414" height="72"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                <state key="normal" title="Button to SB">
+                                    <color key="titleColor" red="0.21970194749999999" green="0.21970194749999999" blue="0.21970194749999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <segue destination="TmW-Sw-wNx" kind="show" id="MtL-BA-UkR"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="U11-K3-IRH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="B7s-Yn-SEq"/>
+                            <constraint firstItem="U11-K3-IRH" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="CTh-jU-67a"/>
+                            <constraint firstItem="ecg-Cy-g5U" firstAttribute="top" secondItem="U11-K3-IRH" secondAttribute="bottom" id="PbW-d0-gaJ"/>
+                            <constraint firstItem="ecg-Cy-g5U" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="S3X-L5-nDK"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="U11-K3-IRH" secondAttribute="trailing" id="UP0-WD-PgF"/>
+                            <constraint firstItem="ecg-Cy-g5U" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="W0A-hg-gdj"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="132" y="138"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="F2o-s6-vQZ">
+            <objects>
+                <viewController id="TmW-Sw-wNx" customClass="SBViewController" customModule="PresentTest" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="XPC-x4-SlZ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SB" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QaK-aj-2eo">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="80"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="linkColor" red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="QaK-aj-2eo" firstAttribute="leading" secondItem="hiK-u4-6Eg" secondAttribute="leading" id="8JN-OS-fKW"/>
+                            <constraint firstItem="hiK-u4-6Eg" firstAttribute="trailing" secondItem="QaK-aj-2eo" secondAttribute="trailing" id="RvL-AU-iMd"/>
+                            <constraint firstItem="hiK-u4-6Eg" firstAttribute="bottom" secondItem="QaK-aj-2eo" secondAttribute="bottom" id="rft-qR-FR8"/>
+                            <constraint firstItem="QaK-aj-2eo" firstAttribute="top" secondItem="hiK-u4-6Eg" secondAttribute="top" id="xGd-8Y-K8S"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="hiK-u4-6Eg"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="eA7-9y-qAe"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6cN-OM-UNB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="951" y="135"/>
+        </scene>
+    </scenes>
+</document>
